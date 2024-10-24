@@ -1,0 +1,19 @@
+{
+  "name": "rw-jsx-demo1",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.4.9",
+    "vite-plugin-rw-jsx": "^1.0.0",
+    "vite-plugins-rw-jsx": "^1.0.0"
+  },
+  "author": "Rw",
+  "license": "ISC",
+  "dependencies": {
+    "rw-jsx": "^1.0.21"
+  }
+}
