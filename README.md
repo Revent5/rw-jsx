@@ -64,7 +64,7 @@ const router = createRouter(routes);
 <router.View />
 ```
 
-## store
+## Store
 ```js
 const ··· = defineStore(() => {})
 const ··· = defineStore(String, () => {})
