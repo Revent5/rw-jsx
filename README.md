@@ -7,7 +7,7 @@
 ```js
 [ref, computed, effect, watch, reactive, nextTick];
 [hash => router, useRoute, beforeEach, beforeResolve, afterEach, View, Link];
-[store];
+[store => defineStore, getStoreById, listStores];
 [style];
 [provide - inject];
 [
@@ -15,7 +15,7 @@
 	onBeforeUpdate, 
 	onBeforeMount, 
 	onUpdated, 
-	onBeforeUnmount, 
+	onBeforeUnmount,    
 	onUnmounted
 ];
 ```
@@ -62,4 +62,29 @@ const routes = [
 const router = createRouter(routes);
 <router.Link to={String || Object}>···</router.Link>  
 <router.View />
+```
+
+## store
+```js
+const ··· = defineStore(() => {})
+const ··· = defineStore(String, () => {})
+```
+
+## Style
+```jsx
+const ··· = style`
+    color: red;
+    :hover {
+        color: blue;
+    }
+`
+const ··· = style`
+    ::before {
+        content: 'before';
+        ···
+    }
+`
+···.name
+···.styles
+<h1 class={···.name}>Rw App</h1>
 ```
