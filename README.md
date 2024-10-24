@@ -1,7 +1,5 @@
 # rw-jsx
 
-[toc]
-
 ## Preview
 
 ```js
