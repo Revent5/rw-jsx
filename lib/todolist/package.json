@@ -1,0 +1,17 @@
+{
+  "name": "rw-jsx-todos",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.4.9",
+    "vite-plugins-rw-jsx": "^1.0.0"
+  },
+  "dependencies": {
+    "rw-jsx": "^1.0.19"
+  }
+}
