@@ -1,2 +1,17 @@
 # rw-jsx
-渲染响应式
+
+```js
+[ref, computed, effect, watch, reactive, nextTick];
+[router];
+[store];
+[style];
+[provide - inject];
+[
+	onMounted, 
+	onBeforeUpdate, 
+	onBeforeMount, 
+	onUpdated, 
+	onBeforeUnmount, 
+	onUnmounted
+];
+```
