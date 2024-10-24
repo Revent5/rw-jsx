@@ -5,6 +5,7 @@
 ## Preview
 
 ```js
+[Fragment, Portal]
 [ref, computed, effect, watch, reactive, nextTick];
 [hash => router, useRoute, beforeEach, beforeResolve, afterEach, View, Link];
 [store => defineStore, getStoreById, listStores];
