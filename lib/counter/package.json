@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "vite": "^5.4.9",
-    "vite-plugin-rw-jsx": "^1.0.0",
     "vite-plugins-rw-jsx": "^1.0.0"
   },
   "author": "Rw",

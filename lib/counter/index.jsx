@@ -10,6 +10,5 @@ const appStyle = style`
 `;
 const app = document.createElement('div');
 app.className = appStyle.name;
-document.body.appendChild(app);
 
 render(<App />, app);
