@@ -1,7 +1,7 @@
 # rw-jsx
 
 -   [rw-jsx](#rw-jsx)
-    -   [Preview](#preview)
+-   [Preview](#preview)
     -   [Fragment](#fragment)
     -   [Portal](#portal)
     -   [Router](#router)
@@ -13,7 +13,7 @@
     -   [Show](#show)
     -   [Switch Match](#switch-match)
 
-## Preview
+# Preview
 
 `[Fragment, Portal]`
 
