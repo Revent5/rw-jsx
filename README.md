@@ -17,17 +17,29 @@
 
 `[Fragment, Portal]`
 
-`[ref, computed, effect, watch, reactive, nextTick]`
+`[reactive, readonly, shallowReactive, shallowReadonly, isReactive, isReadonly, isShallow, isProxy, toRaw]`
 
-`[hash => router, useRoute, beforeEach, beforeResolve, afterEach, View, Link]`
+`[ref, shallowRef, isRef, isShallowRef, unref, toRefs, toRef]`
 
-`[store => defineStore, getStoreById, listStores]`
+`[computed]`
+
+`[effect]`
+
+`[watch, watchEffect, watchPostEffect, watchSyncEffect, debouncedWatch, throttledWatch]`
+
+`[nextTick]`
+
+`[createRouter, useRoute, useRouter, beforeEach, beforeResolve, afterEach, View, Link]`
+
+`[defineStore, getStoreById, listStores]`
 
 `[style]`
 
-`[provide - inject]`
+`[provide, inject]`
 
 `[onMounted, onBeforeUpdate, onBeforeMount, onUpdated, onBeforeUnmount,  onUnmounted ];`
+
+`[For, Index, Show, Switch]`
 
 ## Fragment
 
