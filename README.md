@@ -7,6 +7,7 @@
     -   [Router](#router)
     -   [Store](#store)
     -   [Style](#style)
+-   [Control](#control)
     -   [For](#for)
     -   [Index](#index)
     -   [Show](#show)
@@ -111,6 +112,8 @@ const ··· = style`
 ···.styles
 <h1 class={···.name}>Rw App</h1>
 ```
+
+# Control
 
 ## For
 
