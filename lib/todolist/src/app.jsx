@@ -13,9 +13,7 @@ const logoStyle = style`
 
 export default function App() {
     const todosRef = ref(fetch());
-    effect(() => {
-        save(todosRef.value);
-    });
+    effect(() => save(todosRef.value));
     function handleKeyDown(e, i) {
         if (e.key === 'Enter' && e.target.value.trim()) {
             createTodoAtIndex(e, i);
