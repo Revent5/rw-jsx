@@ -2,18 +2,24 @@
 
 -   [rw-jsx](#rw-jsx)
 -   [Preview](#preview)
+    -   [rw-jsx](#rw-jsx-1)
+    -   [rw-jsx-hash-router](#rw-jsx-hash-router)
+    -   [rw-jsx-store](#rw-jsx-store)
+    -   [rw-jsx-control](#rw-jsx-control)
+-   [Use](#use)
     -   [Fragment](#fragment)
     -   [Portal](#portal)
     -   [Router](#router)
     -   [Store](#store)
     -   [Style](#style)
--   [Control](#control)
     -   [For](#for)
     -   [Index](#index)
     -   [Show](#show)
     -   [Switch Match](#switch-match)
 
 # Preview
+
+## rw-jsx
 
 `[Fragment, Portal]`
 
@@ -25,13 +31,11 @@
 
 `[effect]`
 
+`[getContext]`
+
 `[watch, watchEffect, watchPostEffect, watchSyncEffect, debouncedWatch, throttledWatch]`
 
 `[nextTick]`
-
-`[createRouter, useRoute, useRouter, beforeEach, beforeResolve, afterEach, View, Link]`
-
-`[defineStore, getStoreById, listStores]`
 
 `[style]`
 
@@ -39,7 +43,19 @@
 
 `[onMounted, onBeforeUpdate, onBeforeMount, onUpdated, onBeforeUnmount,  onUnmounted ];`
 
+## rw-jsx-hash-router
+
+`[createRouter, useRoute, useRouter, beforeEach, beforeResolve, afterEach, View, Link]`
+
+## rw-jsx-store
+
+`[defineStore, getStoreById, listStores]`
+
+## rw-jsx-control
+
 `[For, Index, Show, Switch]`
+
+# Use
 
 ## Fragment
 
@@ -124,8 +140,6 @@ const ··· = style`
 ···.styles
 <h1 class={···.name}>Rw App</h1>
 ```
-
-# Control
 
 ## For
 
