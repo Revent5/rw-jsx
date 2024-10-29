@@ -1,25 +1,21 @@
 # rw-jsx
 
--   [rw-jsx](#rw-jsx)
--   [Preview](#preview)
-    -   [rw-jsx](#rw-jsx-1)
-    -   [rw-jsx-hash-router](#rw-jsx-hash-router)
-    -   [rw-jsx-store](#rw-jsx-store)
-    -   [rw-jsx-control](#rw-jsx-control)
--   [Use](#use)
-    -   [Fragment](#fragment)
-    -   [Portal](#portal)
-    -   [Router](#router)
-    -   [Store](#store)
-    -   [Style](#style)
-    -   [For](#for)
-    -   [Index](#index)
-    -   [Show](#show)
-    -   [Switch Match](#switch-match)
+- [Preview](#preview)
+  - [rw-jsx-hash-router](#rw-jsx-hash-router)
+  - [rw-jsx-store](#rw-jsx-store)
+  - [rw-jsx-control](#rw-jsx-control)
+- [Use](#use)
+  - [Fragment](#fragment)
+  - [Portal](#portal)
+  - [Router](#router)
+  - [Store](#store)
+  - [Style](#style)
+  - [For](#for)
+  - [Index](#index)
+  - [Show](#show)
+  - [Switch Match](#switch-match)
 
 # Preview
-
-## rw-jsx
 
 `[Fragment, Portal]`
 
