@@ -1,4 +1,4 @@
-import { style } from 'rw-jsx';
+import { style } from 'rw-jsx-css';
 import './app.css';
 import { fetch, save } from './utils';
 

@@ -6,6 +6,7 @@
     -   [rw-jsx-hash-router](#rw-jsx-hash-router)
     -   [rw-jsx-store](#rw-jsx-store)
     -   [rw-jsx-control](#rw-jsx-control)
+    -   [rw-jsx-css](#rw-jsx-css)
 -   [Use](#use)
     -   [Directive](#directive)
     -   [Fragment](#fragment)
@@ -38,8 +39,6 @@
 
 `[nextTick]`
 
-`[style]`
-
 `[provide, inject]`
 
 `[onMounted, onBeforeUpdate, onBeforeMount, onUpdated, onBeforeUnmount,  onUnmounted ];`
@@ -57,6 +56,10 @@
 ## rw-jsx-control
 
 `[For, Index, Show, Switch]`
+
+## rw-jsx-css
+
+`[style]`
 
 # Use
 
@@ -149,18 +152,19 @@ const ··· = defineStore(String, () => {})
 ```jsx
 const ··· = style`
     color: red;
+    bacground: ${props => props.bacground || 'green'}
     :hover {
-        color: blue;
+        color: ${props => props.color || '#000000'};
     }
 `
 const ··· = style`
     ::before {
         content: 'before';
-        ···
     }
 `
 ···.name
-···.styles
+···.value.xxx
+....clear()
 <h1 class={···.name}>Rw App</h1>
 ```
 

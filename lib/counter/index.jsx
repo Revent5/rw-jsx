@@ -1,4 +1,5 @@
-import { style } from 'rw-jsx';
+import { style } from 'rw-jsx-css';
+import { createNode } from 'rw-jsx';
 import './index.css';
 import { App } from './src/App';
 
@@ -8,7 +9,6 @@ const appStyle = style`
     padding: 2rem;
     text-align: center;
 `;
-const app = document.createElement('div');
-app.className = appStyle.name;
+const app = createNode(<div className={appStyle.name} />);
 
 render(<App />, app);

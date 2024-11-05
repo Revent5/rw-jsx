@@ -1,6 +1,6 @@
-import { ref, style } from 'rw-jsx';
+import { ref } from 'rw-jsx';
+import { style } from 'rw-jsx-css';
 import viteLogo from '/vite.svg';
-
 export function App() {
     const countRef = ref(0);
     return () => (
