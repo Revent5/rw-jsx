@@ -9,11 +9,12 @@
   },
   "devDependencies": {
     "vite": "^5.4.9",
-    "vite-plugin-rw-jsx": "^1.0.12"
+    "vite-plugin-rw-jsx": "^1.1.0"
   },
   "author": "Rw",
   "license": "MIT",
   "dependencies": {
-    "rw-jsx": "^1.0.74"
+    "rw-jsx": "^1.1.1",
+    "rw-jsx-css": "^1.0.2"
   }
 }
