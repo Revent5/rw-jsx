@@ -14,7 +14,7 @@
   "author": "Rw",
   "license": "MIT",
   "dependencies": {
-    "rw-jsx": "^1.2.1",
+    "rw-jsx": "^1.2.3",
     "rw-jsx-css": "^1.0.3"
   }
 }
