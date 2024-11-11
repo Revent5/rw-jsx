@@ -1,23 +1,22 @@
 # rw-jsx
 
--   [rw-jsx](#rw-jsx)
--   [Preview](#preview)
-    -   [rw-jsx](#rw-jsx-1)
-    -   [rw-jsx-hash-router](#rw-jsx-hash-router)
-    -   [rw-jsx-store](#rw-jsx-store)
-    -   [rw-jsx-control](#rw-jsx-control)
-    -   [rw-jsx-css](#rw-jsx-css)
--   [Use](#use)
-    -   [Directive](#directive)
-    -   [Fragment](#fragment)
-    -   [Portal](#portal)
-    -   [Router](#router)
-    -   [Store](#store)
-    -   [Style](#style)
-    -   [For](#for)
-    -   [Index](#index)
-    -   [Show](#show)
-    -   [Switch Match](#switch-match)
+- [rw-jsx](#rw-jsx)
+- [Preview](#preview)
+  - [rw-jsx](#rw-jsx-1)
+  - [rw-jsx-hash-router](#rw-jsx-hash-router)
+  - [rw-jsx-store](#rw-jsx-store)
+  - [rw-jsx-control](#rw-jsx-control)
+  - [rw-jsx-css](#rw-jsx-css)
+- [Use](#use)
+  - [Directive](#directive)
+  - [Fragment](#fragment)
+  - [Portal](#portal)
+  - [Router](#router)
+  - [Store](#store)
+  - [Style](#style)
+  - [For](#for)
+  - [Show](#show)
+  - [Switch Match](#switch-match)
 
 # Preview
 
@@ -33,7 +32,7 @@
 
 `[effect]`
 
-`[getContext]`
+`[context, emit, props, slots, children, getContext]`
 
 `[watch, watchEffect, watchPostEffect, watchSyncEffect, debouncedWatch, throttledWatch]`
 
@@ -47,7 +46,7 @@
 
 ## rw-jsx-hash-router
 
-`[createRouter, useRoute, useRouter, beforeEach, beforeResolve, afterEach, View, Link]`
+`[createHashRouter, createHistoryRouter, useRoute, useRouter, beforeEach, beforeResolve, afterEach, View, Link]`
 
 ## rw-jsx-store
 
@@ -55,7 +54,7 @@
 
 ## rw-jsx-control
 
-`[For, Index, Show, Switch]`
+`[For, Show, Switch]`
 
 ## rw-jsx-css
 
@@ -66,15 +65,21 @@
 ## Directive
 
 ```jsx
-directive(String, (el, hooks) => {
-    hooks.mount(() => {
-        // ...mount
+directive(String, (el, binding, hooks) => {
+    // mount
+    // ...code
+
+    hooks.mount((binding) => {
+        // mount
+        // ...code
     });
-    hooks.update(() => {
-        // ...update
+    hooks.update((binding) => {
+        // update
+        // ...code
     });
     return () => {
-        // ...cleanup
+        // cleanup
+        // ...code
     };
 });
 <div rw-focus={...}></div>;
@@ -82,6 +87,26 @@ directive(String, (el, hooks) => {
 <div rw-focus:xxx.xxx.xxx...={...}></div>;
 <div rw-focus.xxx.xxx...={...}></div>;
 ```
+
+```jsx
+import { context, emit, children, props, slots, getContext } from 'rw-jsx'
+export default function App(){
+    context()
+    emit('test', "Test Emit")
+    props()
+    slots()
+    children()
+    getContext.ctx
+    getContext.emit
+    getContext.props
+    getContext.slots
+    getContext.children
+    return () => <div>Rw App</div>
+}
+
+```
+
+
 
 ## Fragment
 
@@ -135,9 +160,14 @@ const routes = [
         ]
     }
 ]
-const router = createRouter(routes);
+const router = createHashRouter(routes);
+// or
+const router = createHistoryRouter(routes);
 <router.Link to={String || Object}>···</router.Link>
-<router.View />
+<router.View>
+    {/** Not 404 */}
+    <div>Not 404</div>
+</router.View>
 ```
 
 ## Store
@@ -172,46 +202,10 @@ const ··· = style`
 
 ```jsx
 const listRef = ref([]);
-
-<For {...listRef}>
-    {/** main */}
+<For each={listRef.value} fallback={<p>fallback</p>}>
     {(item) => <li key={item}>{item}</li>}
-    {/** fallback */}
-    <p>fallback</p>
-</For>
-<For {...listRef.value}>
-    {/** main */}
-    {(item) => <li key={item}>{item}</li>}
-    {/** fallback */}
-    <p>fallback</p>
-</For>
-<For each={listRef.value}>
-    {/** main */}
-    {(item) => <li key={item}>{item}</li>}
-    {/** fallback */}
-    <p>fallback</p>
-</For>
+<For>
 
-```
-
-## Index
-
-```jsx
-const listRef = ref([]);
-<Index each={listRef.value} fallback={<h1>No items</h1>}>
-    {(item, index) => (
-        <h1>
-            Item Index: {index} - <mark>{item}</mark>
-        </h1>
-    )}
-</Index>;
-<Index each={listRef.value} fallback={() => <h1>No items</h1>}>
-    {(item, index) => (
-        <h1>
-            Item Index: {index} - <mark>{item}</mark>
-        </h1>
-    )}
-</Index>;
 ```
 
 ## Show
